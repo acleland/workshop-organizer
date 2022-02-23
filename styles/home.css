@@ -1,1 +1,46 @@
 /* add home page styles here */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logout {
+    margin-right: 1em;
+}
+
+#add-participant {
+    align-self: flex-end;
+    margin-right: 1em;
+}
+
+#login-email {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+#workshops {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.workshop {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.participants {
+    padding-left: 0;
+}
+
