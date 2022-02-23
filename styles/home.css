@@ -44,3 +44,8 @@ main {
     padding-left: 0;
 }
 
+.participant:hover {
+    cursor: pointer;
+    background-color: rgb(231, 66, 66);
+}
+

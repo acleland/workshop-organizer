@@ -8,7 +8,10 @@ export async function getWorkshops() {
     return checkError(response);
 }
 
-
+export async function deleteParticipant(id) {
+    const response = await client.from('participants').delete().eq('id', id);
+    return checkError(response);
+}
 
 export function getUser() {
     return client.auth.session() && client.auth.session().user;
