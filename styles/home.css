@@ -1,1 +1,71 @@
 /* add home page styles here */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logout {
+    margin-right: 1em;
+}
+
+#main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+#add-participant {
+    align-self: flex-end;
+    margin-right: 1em;
+}
+
+#login-email {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+#workshops {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(145, 192, 253);
+}
+
+.workshop {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+}
+
+.workshop h3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.5em;
+
+}
+
+.participants {
+    padding-left: 0;
+    margin: 0.5em;
+}
+
+.participant:hover {
+    cursor: pointer;
+    background-color: rgb(231, 66, 66);
+}
+
