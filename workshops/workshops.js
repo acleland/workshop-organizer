@@ -1,9 +1,12 @@
-import { checkAuth, logout } from '../fetch-utils.js';
+import { checkAuth, getUser, getWorkshops, logout } from '../fetch-utils.js';
 
-checkAuth();
+const loginEmail = document.getElementById('login-email');
 
-const logoutButton = document.getElementById('logout');
+window.addEventListener('load', async () => {
+    checkAuth();
+    loginEmail.textContent = getUser().email;
 
-logoutButton.addEventListener('click', () => {
-    logout();
+    const workshops = await getWorkshops();
+    console.log(workshops);
+    
 });
