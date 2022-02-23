@@ -2,6 +2,7 @@ import { createParticipant, getWorkshops, checkAuth } from '../fetch-utils.js';
 
 const addForm = document.getElementById('add-form');
 const selectWorkshop = document.getElementById('workshop-select');
+const cancelButton = document.getElementById('cancel');
 
 checkAuth();
 
@@ -24,4 +25,8 @@ window.addEventListener('load', async () => {
         option.textContent = workshop.name;
         selectWorkshop.append(option);
     }
+});
+
+cancelButton.addEventListener('click', () => {
+    window.location.replace('/workshops');
 });
